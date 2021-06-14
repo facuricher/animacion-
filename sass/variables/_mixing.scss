@@ -1,0 +1,44 @@
+@mixin global{
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+     * img{
+        width: 100%;
+        height: auto;
+     }
+    
+}
+
+
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin width {
+    width: 60px;
+    height: 60px;
+}
+
+@mixin relative {
+    position: relative;
+    left: 20px;
+}
+
+//animacion
+@mixin keyframe {
+    @keyframes rotate-animation{
+        from{
+            transform: rotate(0deg);
+        }
+    
+        to{
+            transform: rotate(360deg);
+        }
+    }
+}
